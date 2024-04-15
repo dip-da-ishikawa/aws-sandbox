@@ -1,0 +1,12 @@
+openapi: 3.0.3
+info:
+  title: sandbox-api
+  description: This API is a sandbox for testing purposes
+  version: 0.0.1
+servers:
+  - url: 'https'
+paths:
+  /users:
+    $ref: './paths/users.yaml#/users'
+  /articles:
+    $ref: './paths/articles.yaml#/articles'

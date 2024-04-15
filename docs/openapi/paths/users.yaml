@@ -1,0 +1,31 @@
+users:
+  get:
+    tags:
+      - users
+    summary: Get all users
+    operationId: getAllUsers
+    responses:
+      '200':
+        description: OK
+        content:
+          application/json:
+            schema:
+              $ref: '../components/schemas/users.yaml#/users'
+  post:
+    tags:
+      - users
+    summary: Create a user
+    operationId: createUser
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/users.yaml#/user'
+    responses:
+      '201':
+        description: Created
+        content:
+          application/json:
+            schema:
+              $ref: '../components/schemas/users.yaml#/user'

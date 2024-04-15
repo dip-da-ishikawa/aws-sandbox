@@ -1,0 +1,21 @@
+article:
+  type: object
+  required:
+    - id
+    - title
+    - body
+  properties:
+    id:
+      type: integer
+      format: int64
+    title:
+      type: string
+      maxLength: 63
+    body:
+      type: string
+      format: email
+      maxLength: 511
+articles:
+  type: array
+  items:
+    $ref: '#/article'

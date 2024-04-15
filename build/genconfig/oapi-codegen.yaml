@@ -1,0 +1,7 @@
+generate:
+  chi-server: true
+import-mapping:
+  ./paths/users.yaml: github.com/dip-da-ishikawa/aws-sandbox/docs/openapi/paths
+  ./paths/articles.yaml: github.com/dip-da-ishikawa/aws-sandbox/docs/openapi/paths
+  ../components/schemas/users.yaml: github.com/dip-da-ishikawa/aws-sandbox/docs/openapi/components/schemas
+  ../components/schemas/articles.yaml: github.com/dip-da-ishikawa/aws-sandbox/docs/openapi/components/schemas
