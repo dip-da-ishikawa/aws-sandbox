@@ -5,6 +5,11 @@ info:
   version: 0.0.1
 servers:
   - url: 'https'
+tags:
+  - name: users
+    description: User operations
+  - name: articles
+    description: Article operations
 paths:
   /users:
     $ref: './paths/users.yaml#/users'
