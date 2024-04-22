@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  tools:
+    container_name: tools
+    build:
+      context: ./build/
+      dockerfile: ./tools/Dockerfile
+    volumes:
+      - ./build/tools/openapi:/tools/openapi
+      - ./docs/openapi:/docs
+      - ./src:/src

@@ -10,4 +10,4 @@ articles:
         content:
           application/json:
             schema:
-              $ref: '../components/schemas/articles.yaml#/articles'
+              $ref: '../../components/schemas/articles/articles.yaml#/articles'

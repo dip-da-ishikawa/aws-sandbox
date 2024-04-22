@@ -10,7 +10,7 @@ users:
         content:
           application/json:
             schema:
-              $ref: '../components/schemas/users.yaml#/users'
+              $ref: '../../components/schemas/users/users.yaml#/users'
   post:
     tags:
       - users
@@ -21,11 +21,11 @@ users:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/users.yaml#/user'
+            $ref: '../../components/schemas/users/users.yaml#/user'
     responses:
       '201':
         description: Created
         content:
           application/json:
             schema:
-              $ref: '../components/schemas/users.yaml#/user'
+              $ref: '../../components/schemas/users/users.yaml#/user'

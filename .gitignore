@@ -1,0 +1,3 @@
+zscaler.crt
+docs/openapi/gen/*
+!docs/openapi/gen/.gitkeep
